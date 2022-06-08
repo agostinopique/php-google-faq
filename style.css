@@ -38,22 +38,32 @@
     border-radius: 50%;
 }
 
-nav ul{
+nav ul,
+footer nav ul{
     list-style: none;
     margin-bottom: 0;
     padding: 0;
 }
 
-.active{
-    color: #3669D7;
-    border-bottom: 2px solid #3669D7;
-}
 
-nav ul li{
+.bottom-header nav ul li{
     margin-right: 40px;
     padding-bottom: 8px;
 }
 
+.bottom-header nav ul li a{
+    text-decoration: none;
+    color: #7D8185;
+}
+
+.bottom-header nav ul li.active{
+    color: #3669D7;
+    border-bottom: 2px solid #3669D7;
+}
+
+.bottom-header nav ul li.active a{
+    color: #3669D7;
+}
 /* /HEADER */
 
 /* MAIN */
@@ -89,3 +99,25 @@ nav ul li{
 }
 
 /* /MAIN */
+
+/* FOOTER */
+
+footer{
+    height: 50px;
+    background-color: #F5F5F5;
+}
+
+.footer-container{
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-nav,
+.footer-nav nav{
+    height: 100%;
+}
+.footer-nav nav ul li{
+    margin-right: 40px;
+}
+/* /FOOTER */

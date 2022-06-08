@@ -45,7 +45,7 @@
             </ol>
             </p>
             <p>Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</p>
-            <h4>Stabilire il paese associato al tuo account</h4>
+            <h5>Stabilire il paese associato al tuo account</h5>
             <p>Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell\'ultimo anno.</p>
             <p>I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe occorrere circa un anno per aggiornare l\'associazione del paese.</p>
             <p>Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l\'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. <a href="#">Contattaci</a> se ritieni che il paese associato al tuo account sia sbagliato.</p>'
@@ -100,11 +100,21 @@
             <div class="bottom-header d-flex align-items-end">
                 <nav>
                     <ul class="d-flex">
-                        <li>Introduzione</li>
-                        <li>Norme sulla privacy</li>
-                        <li>Termini di servizio</li>
-                        <li>Tecnologie</li>
-                        <li class="active">Domande Frequenti</li>
+                        <li> 
+                            <a href="#">Introduzione</a>
+                        </li>
+                        <li>
+                            <a href="#">Norme sulla privacy</a>    
+                        </li>
+                        <li>
+                            <a href="#">Termini di servizio</a>
+                        </li>
+                        <li>
+                            <a href="#">Tecnologie</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Domande Frequenti</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -118,6 +128,19 @@
             <?php endforeach; ?>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <nav class="d-flex align-items-center">
+                    <ul class="d-flex">
+                        <li>Google</li>
+                        <li>Tutto su Google</li>
+                        <li>Privacy</li>
+                        <li>Termini</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
