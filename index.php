@@ -74,7 +74,10 @@
 <body>
     <h1>Google FAQ</h1>
     <?php foreach($db as $faqs => $value):?>
-        <h3><?php  ?></h3>
+        <?php foreach($value as $key => $value): ?>
+        <h3><?php echo $key ?></h3>
+        <p><?php echo $value ?></p>
+        <?php endforeach; ?>
     <?php endforeach; ?>
 </body>
 </html>
