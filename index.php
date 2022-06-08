@@ -60,7 +60,6 @@
         ]
     ];
 
-    // var_dump($db)
 
 ?>
 <!DOCTYPE html>
@@ -69,15 +68,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
     <title>PHP Google FAQ</title>
 </head>
 <body>
-    <h1>Google FAQ</h1>
-    <?php foreach($db as $faqs => $value):?>
-        <?php foreach($value as $key => $value): ?>
-        <h3><?php echo $key ?></h3>
-        <p><?php echo $value ?></p>
-        <?php endforeach; ?>
-    <?php endforeach; ?>
+    <header>
+        <div class="header-container d-flex flex-column justify-content-between">
+            <div class="top-header d-flex justify-content-between">
+
+                <div class="google-logo d-flex align-items-center">
+                    <img src="./assets/img/Google_logo.png" alt="google-logo">
+                    <h5 class="mb-0 ms-2">Privacy e termini</h5>
+                </div>
+
+                <div class="side-comands d-flex align-items-center">
+
+                    <div class="google-apps">
+                        <i class="bi bi-grid-3x3-gap-fill"></i>
+                    </div>
+
+                    <div class="profile">
+                        <img src="./assets/img/my-avatar.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-header d-flex align-items-end">
+                <nav>
+                    <ul class="d-flex">
+                        <li>Introduzione</li>
+                        <li>Norme sulla privacy</li>
+                        <li>Termini di servizio</li>
+                        <li>Tecnologie</li>
+                        <li class="active">Domande Frequenti</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="text-container faq-text">
+            <?php foreach($db as $faqs):?>
+                <h4 class="paragraph-title"><?php echo $faqs['title'] ?></h4>
+                <p><?php echo $faqs['text'] ?></p>
+            <?php endforeach; ?>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>
