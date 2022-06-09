@@ -34,15 +34,20 @@
         [
             'title' => 'Perché il mio account è associato a un paese?',
             'text' => '<p>Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:</p>
+
             <ol>
                 <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
+
                     <ol type="a">
                         <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
                         <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
                     </ol>
+
                 </li>
+
                 <li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
             </ol>
+
             </p>
             <p>Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</p>
             <h5>Stabilire il paese associato al tuo account</h5>
@@ -68,16 +73,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- /BOOTSTRAP -->
+    
+    <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
 
     <title>PHP Google FAQ</title>
 </head>
 <body>
     <header>
         <div class="header-container d-flex flex-column justify-content-between">
+
+            <!-- HEADER SUPERIORE -->
             <div class="top-header d-flex justify-content-between">
 
                 <div class="google-logo d-flex align-items-center">
@@ -85,6 +98,7 @@
                     <h5 class="mb-0 ms-2">Privacy e termini</h5>
                 </div>
 
+                <!-- PROFILO -->
                 <div class="side-comands d-flex align-items-center">
 
                     <div class="google-apps">
@@ -96,7 +110,11 @@
                     </div>
 
                 </div>
+                <!-- /PROFILO -->
             </div>
+            <!-- /HEADER SUPERIORE -->
+
+            <!-- HEADER INFERIORE -->
             <div class="bottom-header d-flex align-items-end">
                 <nav>
                     <ul class="d-flex">
@@ -118,19 +136,29 @@
                     </ul>
                 </nav>
             </div>
+            <!-- HEADER INFERIORE -->
+
         </div>
     </header>
-    <main>
+    <main id="main">
+        <!-- CONTENUTO FAQ -->
         <div class="text-container faq-text">
             <?php foreach($db as $faqs):?>
+
+                <!-- TITOLO FAQ -->
                 <h4 class="paragraph-title"><?php echo $faqs['title'] ?></h4>
+
+                <!-- PARAGRAFO FAQ -->
                 <p><?php echo $faqs['text'] ?></p>
             <?php endforeach; ?>
         </div>
+        <!-- /CONTENUTO FAQ -->
+
     </main>
     <footer>
         <div class="footer-container">
             <div class="footer-nav">
+                <!-- NAVBAR FOOTER -->
                 <nav class="d-flex align-items-center">
                     <ul class="d-flex">
                         <li>Google</li>
@@ -139,6 +167,7 @@
                         <li>Termini</li>
                     </ul>
                 </nav>
+                <!-- /NAVBAR FOOTER -->
             </div>
         </div>
     </footer>
